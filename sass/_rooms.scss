@@ -1,0 +1,28 @@
+@use "mixin" as *;
+
+.rooms-wrap {
+  display: flex;
+  gap: 28px;
+}
+
+.rooms-wrap img {
+  border-radius: 5px;
+}
+
+.rooms-image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.rooms-image__thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.rooms-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
