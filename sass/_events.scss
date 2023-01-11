@@ -1,0 +1,17 @@
+@use "mixin" as *;
+@use "variables" as *;
+
+.events {
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    flex: 1;
+    object-fit: cover;
+    img {
+      border-radius: 18px;
+    }
+  }
+}

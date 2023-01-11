@@ -29,14 +29,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px;
   width: 100%;
   max-width: 1090px;
 }
 
 .wrap-content {
   display: flex;
-  gap: 28px;
+  gap: 58px;
 }
 
 .reverse {
@@ -90,6 +89,7 @@ img {
   font-weight: 600;
   font-size: 48px;
   line-height: 58px;
+  margin-bottom: 8px;
 }
 
 .paragraph {
@@ -105,13 +105,23 @@ img {
   margin: 50px 0;
 }
 
+.divider {
+  background-color: #e5e8e0;
+  padding: 80px;
+  text-align: center;
+}
+.divider h2 {
+  max-width: 25ch;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
   align-items: center;
   max-width: 1309px;
   width: 100%;
   justify-content: space-between;
-  padding: 28px 32px;
+  padding: 38px 32px;
   margin: 0 auto;
 }
 
@@ -123,7 +133,15 @@ img {
   display: flex;
   gap: 28px;
 }
-
+.navbar a {
+  font-family: "Inter", sans-serif;
+  color: #5d6f6b;
+  font-size: 24px;
+  font-weight: 300;
+}
+.navbar a:hover {
+  color: #c2b791;
+}
 .hero {
   background: url("/public/assets/images/hero-cover.png");
   background-size: cover;
@@ -164,15 +182,14 @@ img {
 /*Rooms*/
 .rooms {
   display: flex;
-  gap: 28px;
 }
 .rooms img {
-  border-radius: 5px;
+  border-radius: 18px;
 }
 .rooms-image {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 38px;
   flex: 1;
 }
 .rooms-image__list {
@@ -196,7 +213,6 @@ img {
 .services .wrap-content img {
   flex: 1;
   object-fit: cover;
-  background-color: red;
   align-self: center;
 }
 .services-content {
@@ -221,6 +237,58 @@ img {
 .services-content__icons p {
   font-family: "Inter", sans-serif;
   color: #5d6f6b;
+}
+
+.location__content {
+  flex: 1;
+}
+.location__image {
+  flex: 1;
+}
+
+.events__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.events__image {
+  flex: 1;
+  object-fit: cover;
+}
+.events__image img {
+  border-radius: 18px;
+}
+
+.contact {
+  display: flex;
+}
+.contact-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ebe7da;
+  padding: 0 32px;
+  height: 65vh;
+}
+.contact-content .title {
+  max-width: 14ch;
+}
+.contact-cover {
+  flex: 1;
+  width: 100%;
+  background-image: url("/public/assets/images/woman-smile.png");
+  background-size: cover;
+}
+
+.feedback__content {
+  flex: 1;
+}
+.feedback__image {
+  flex: 1;
+}
+.feedback__image img {
+  border-radius: 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */

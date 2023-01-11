@@ -13,14 +13,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px;
   width: 100%;
   max-width: 1090px;
 }
 
 .wrap-content {
   display: flex;
-  gap: 28px;
+  gap: 58px;
 }
 
 .reverse {
@@ -48,6 +47,7 @@
 
 .subtitle {
   @include type-02;
+  margin-bottom: 8px;
 }
 
 .paragraph {
@@ -57,4 +57,14 @@
 
 .m-y {
   margin: 50px 0;
+}
+
+.divider {
+  background-color: $soft-gold;
+  padding: 80px;
+  text-align: center;
+  h2 {
+    max-width: 25ch;
+    margin: 0 auto;
+  }
 }

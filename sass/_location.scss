@@ -1,0 +1,11 @@
+@use "mixin" as *;
+@use "variables" as *;
+
+.location {
+  &__content {
+    flex: 1;
+  }
+  &__image {
+    flex: 1;
+  }
+}

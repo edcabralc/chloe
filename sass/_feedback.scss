@@ -1,0 +1,14 @@
+@use "mixin" as *;
+@use "variables" as *;
+
+.feedback {
+  &__content {
+    flex: 1;
+  }
+  &__image {
+    flex: 1;
+    img {
+      border-radius: 18px;
+    }
+  }
+}

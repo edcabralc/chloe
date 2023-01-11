@@ -7,7 +7,7 @@
   max-width: 1309px;
   width: 100%;
   justify-content: space-between;
-  padding: 28px 32px;
+  padding: 38px 32px;
   // position: relative;
   margin: 0 auto;
 }
@@ -22,6 +22,17 @@
 .navbar {
   display: flex;
   gap: 28px;
+  a {
+    font-family: $secondary-text;
+    color: $soft-gray;
+    font-size: 24px;
+    font-weight: 300;
+    &:hover {
+      color: $deep-gold;
+    }
+  }
+  .btn {
+  }
 }
 
 .menu-mobile {
