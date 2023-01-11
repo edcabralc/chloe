@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+@mixin type-hero {
+  font-family: $primary-text;
+}
+
+@mixin type-01() {
+}
+
+@mixin type-02() {
+}

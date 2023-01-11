@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 28px 68px;
+  // position: relative;
+}
+
+.brand {
+  width: 219px;
+}
+
+.menu {
+}
+
+.navbar {
+  display: flex;
+  gap: 28px;
+}
+
+.menu-mobile {
+}

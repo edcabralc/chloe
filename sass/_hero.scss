@@ -1,0 +1,31 @@
+@use "mixin" as *;
+.hero {
+  background: url("/public/assets/images/hero-cover.png");
+  background-size: cover;
+  h1 {
+    @include type-hero;
+    max-width: 50ch;
+  }
+  &:after {
+    content: "";
+    width: 280px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    background-image: url("/public/assets/images/ellipse-gold.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+  }
+}
+
+.hero-content {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 68px;
+}

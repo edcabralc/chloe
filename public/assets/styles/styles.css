@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 68px 0px;
+  margin: 0 32px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1090px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.btn {
+  color: #fff;
+  background-color: #01957d;
+  width: 270px;
+  text-align: center;
+  padding: 28px 72px;
+}
+
+.hero-title {
+  font-size: 86px;
+  font-weight: 700;
+  line-height: 104px;
+  color: #1d1b1b;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #242222;
+  font-weight: 700;
+  padding: 28px 0;
+  margin: 38px 0;
+  position: relative;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 24px;
+  color: #686b68;
+  line-height: 36px;
+  font-weight: 400px;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 28px 68px;
+}
+
+.brand {
+  width: 219px;
+}
+
+.navbar {
+  display: flex;
+  gap: 28px;
+}
+
+.hero {
+  background: url("/public/assets/images/hero-cover.png");
+  background-size: cover;
+}
+.hero h1 {
+  font-family: "Aleo", serif;
+  max-width: 50ch;
+}
+.hero:after {
+  content: "";
+  width: 280px;
+  height: 350px;
+  display: block;
+  position: absolute;
+  background-image: url("/public/assets/images/ellipse-gold.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 68px;
+}
+
+.rooms-wrap {
+  display: flex;
+  gap: 28px;
+}
+
+.rooms-wrap img {
+  border-radius: 5px;
+}
+
+.rooms-image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.rooms-image__thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.rooms-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.services-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.services-wrap img {
+  flex: 1;
+}
+
+.services-content {
+  flex: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */
