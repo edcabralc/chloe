@@ -1,10 +1,14 @@
 @use "mixin" as *;
+@use "variables" as *;
+
 .hero {
   background: url("/public/assets/images/hero-cover.png");
   background-size: cover;
   h1 {
-    @include type-hero;
+    @include type-01;
     max-width: 50ch;
+    font-size: 96px;
+    line-height: 90px;
   }
   &:after {
     content: "";

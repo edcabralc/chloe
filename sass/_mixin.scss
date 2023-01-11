@@ -1,11 +1,38 @@
 @use "variables" as *;
 
-@mixin type-hero {
+@mixin type-01 {
   font-family: $primary-text;
+  color: $black;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
 }
 
-@mixin type-01() {
+@mixin type-02 {
+  font-family: $secondary-text;
+  color: $light-green;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
 }
 
-@mixin type-02() {
+@mixin type-03 {
+  font-family: $secondary-text;
+  color: $soft-gray;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+@mixin green {
+  font-family: $secondary-text;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: $light-green;
+  width: 260px;
+  text-align: center;
+  padding: 28px 0px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
 }

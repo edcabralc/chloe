@@ -4,10 +4,12 @@
 .header {
   display: flex;
   align-items: center;
+  max-width: 1309px;
   width: 100%;
   justify-content: space-between;
-  padding: 28px 68px;
+  padding: 28px 32px;
   // position: relative;
+  margin: 0 auto;
 }
 
 .brand {

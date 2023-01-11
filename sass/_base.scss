@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixin" as *;
 
 .section {
   display: flex;
@@ -17,42 +18,43 @@
   max-width: 1090px;
 }
 
+.wrap-content {
+  display: flex;
+  gap: 28px;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
 
 .btn {
-  color: #fff;
-  background-color: $light-green;
-  width: 270px;
-  text-align: center;
-  padding: 28px 72px;
+  @include green;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.hero-title {
-  font-size: 86px;
-  font-weight: 700;
-  line-height: 104px;
-  color: $black;
+.btn-secondary {
+  @include green;
+  background-color: $deep-gold;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: #242222;
-  font-weight: 700;
-  padding: 28px 0;
-  margin: 38px 0;
-  position: relative;
-  text-align: center;
+  @include type-01;
+}
+
+.subtitle {
+  @include type-02;
 }
 
 .paragraph {
-  font-size: 24px;
-  color: #686b68;
-  line-height: 36px;
-  font-weight: 400px;
-  text-align: left;
+  @include type-03;
+  max-width: 40ch;
+}
+
+.m-y {
+  margin: 50px 0;
 }
