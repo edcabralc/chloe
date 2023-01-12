@@ -132,17 +132,23 @@ img {
 
 .navbar {
   display: flex;
+  align-items: center;
   gap: 28px;
 }
-.navbar a {
+.navbar a:not(.btn-secondary) {
   font-family: "Inter", sans-serif;
   color: #5d6f6b;
   font-size: 24px;
   font-weight: 300;
 }
-.navbar a:hover {
+.navbar a:not(.btn-secondary):hover {
   color: #c2b791;
 }
+.navbar .btn-secondary {
+  padding: 20px 0px;
+  width: 202px;
+}
+
 .hero {
   background: url("/public/assets/images/hero-cover.png");
   background-size: cover;
@@ -267,7 +273,9 @@ img {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  text-align: center;
   background-color: #ebe7da;
   padding: 0 32px;
   height: 65vh;
@@ -357,6 +365,7 @@ img {
   width: 100%;
   padding: 116px 32px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -385,12 +394,28 @@ img {
   color: white;
   font-weight: 300;
   font-size: 16px;
+  flex: 1;
+}
+.footer-item li:first-child {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .footer-item p {
   max-width: 30ch;
   line-height: 22px;
   margin-bottom: 20px;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .input-group {
@@ -435,10 +460,25 @@ img {
 
 .copy {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #01957d;
-  padding: 42px 32px;
+}
+.copy a {
+  color: #c2b791;
+  font-weight: 700;
+}
+.copy a:hover {
+  color: #fff;
+}
+
+.copy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 32px;
+  max-width: 1300px;
+  width: 100%;
 }
 
 .social {

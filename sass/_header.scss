@@ -21,8 +21,9 @@
 
 .navbar {
   display: flex;
+  align-items: center;
   gap: 28px;
-  a {
+  a:not(.btn-secondary) {
     font-family: $secondary-text;
     color: $soft-gray;
     font-size: 24px;
@@ -31,7 +32,9 @@
       color: $deep-gold;
     }
   }
-  .btn {
+  .btn-secondary {
+    padding: 20px 0px;
+    width: 202px;
   }
 }
 

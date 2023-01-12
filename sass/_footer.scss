@@ -11,6 +11,7 @@
   width: 100%;
   padding: 116px 32px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -31,12 +32,28 @@
   color: white;
   font-weight: 300;
   font-size: 16px;
+  flex: 1;
+  li:first-child {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 .footer-item p {
   max-width: 30ch;
   line-height: 22px;
   margin-bottom: 20px;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .input-group {
@@ -83,11 +100,24 @@
 }
 
 .copy {
+  @include display-flex;
+  background-color: $light-green;
+  a {
+    color: $deep-gold;
+    font-weight: 700;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.copy-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $light-green;
-  padding: 42px 32px;
+  padding: 32px 32px;
+  max-width: 1300px;
+  width: 100%;
 }
 
 .social {
