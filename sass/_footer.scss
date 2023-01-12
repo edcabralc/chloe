@@ -1,0 +1,89 @@
+@use "mixin" as *;
+@use "variables" as *;
+
+.footer {
+  @include display-flex;
+  background-color: $deep-green;
+}
+
+.footer-container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 116px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 219px;
+}
+
+.footer p,
+.copy p {
+  @include type-03;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-item {
+  @include type-03;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-item p {
+  max-width: 30ch;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  background-color: white;
+  // justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.input {
+  width: 100%;
+}
+
+.input input,
+.input-group input:focus {
+  padding: 10px 8px;
+  width: 100%;
+  background-color: transparent;
+  border: red;
+  color: $soft-gray;
+}
+
+.button {
+  background-color: $deep-gold;
+  padding: 0px 30px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.button button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light-green;
+  padding: 42px 32px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}

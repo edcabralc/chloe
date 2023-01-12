@@ -1,5 +1,11 @@
 @use "variables" as *;
 
+@mixin display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin type-01 {
   font-family: $primary-text;
   color: $black;
