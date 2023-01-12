@@ -29,9 +29,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px;
   width: 100%;
   max-width: 1090px;
+}
+
+.wrap-content {
+  display: flex;
+  gap: 58px;
 }
 
 .reverse {
@@ -39,47 +43,86 @@ img {
 }
 
 .btn {
+  font-family: "Inter", sans-serif;
   color: #fff;
+  font-size: 20px;
+  font-weight: 300;
   background-color: #01957d;
-  width: 270px;
+  width: 260px;
   text-align: center;
-  padding: 28px 72px;
+  padding: 28px 0px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 
-.hero-title {
-  font-size: 86px;
-  font-weight: 700;
-  line-height: 104px;
-  color: #1d1b1b;
+.btn-secondary {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: #01957d;
+  width: 260px;
+  text-align: center;
+  padding: 28px 0px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+  background-color: #c2b791;
+}
+.btn-secondary:hover {
+  opacity: 0.7;
 }
 
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: #242222;
+  font-family: "Aleo", serif;
+  color: #1d1b1b;
+  font-size: 64px;
   font-weight: 700;
-  padding: 28px 0;
-  margin: 38px 0;
-  position: relative;
-  text-align: center;
+  line-height: 64px;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  color: #01957d;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 8px;
 }
 
 .paragraph {
+  font-family: "Inter", sans-serif;
+  color: #5d6f6b;
+  font-weight: 400;
   font-size: 24px;
-  color: #686b68;
-  line-height: 36px;
-  font-weight: 400px;
-  text-align: left;
+  line-height: 37px;
+  max-width: 40ch;
+}
+
+.m-y {
+  margin: 50px 0;
+}
+
+.divider {
+  background-color: #e5e8e0;
+  padding: 80px;
+  text-align: center;
+}
+.divider h2 {
+  max-width: 25ch;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   align-items: center;
+  max-width: 1309px;
   width: 100%;
   justify-content: space-between;
-  padding: 28px 68px;
+  padding: 38px 32px;
+  margin: 0 auto;
 }
 
 .brand {
@@ -90,14 +133,28 @@ img {
   display: flex;
   gap: 28px;
 }
-
+.navbar a {
+  font-family: "Inter", sans-serif;
+  color: #5d6f6b;
+  font-size: 24px;
+  font-weight: 300;
+}
+.navbar a:hover {
+  color: #c2b791;
+}
 .hero {
   background: url("/public/assets/images/hero-cover.png");
   background-size: cover;
 }
 .hero h1 {
   font-family: "Aleo", serif;
+  color: #1d1b1b;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
   max-width: 50ch;
+  font-size: 96px;
+  line-height: 90px;
 }
 .hero:after {
   content: "";
@@ -122,44 +179,116 @@ img {
   margin-bottom: 68px;
 }
 
-.rooms-wrap {
+/*Rooms*/
+.rooms {
   display: flex;
-  gap: 28px;
 }
-
-.rooms-wrap img {
-  border-radius: 5px;
+.rooms img {
+  border-radius: 18px;
 }
-
 .rooms-image {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 38px;
   flex: 1;
 }
-
+.rooms-image__list {
+  flex: 1;
+}
 .rooms-image__thumbs {
   display: flex;
   gap: 10px;
 }
-
 .rooms-content {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.services-wrap {
-  display: flex;
-  width: 100%;
+/*end Rooms*/
+/* Services */
+.services .wrap-content {
+  gap: 0;
 }
-
-.services-wrap img {
+.services .wrap-content img {
   flex: 1;
+  object-fit: cover;
+  align-self: center;
 }
-
 .services-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services-content__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 22px 0px;
+}
+.services-content__icons li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+.services-content__icons p {
+  font-family: "Inter", sans-serif;
+  color: #5d6f6b;
+}
+
+.location__content {
+  flex: 1;
+}
+.location__image {
+  flex: 1;
+}
+
+.events__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.events__image {
+  flex: 1;
+  object-fit: cover;
+}
+.events__image img {
+  border-radius: 18px;
+}
+
+.contact {
+  display: flex;
+}
+.contact-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ebe7da;
+  padding: 0 32px;
+  height: 65vh;
+}
+.contact-content .title {
+  max-width: 14ch;
+}
+.contact-cover {
+  flex: 1;
+  width: 100%;
+  background-image: url("/public/assets/images/woman-smile.png");
+  background-size: cover;
+}
+
+.feedback__content {
+  flex: 1;
+}
+.feedback__image {
+  flex: 1;
+}
+.feedback__image img {
+  border-radius: 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */

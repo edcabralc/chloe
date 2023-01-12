@@ -1,28 +1,29 @@
 @use "mixin" as *;
+/*Rooms*/
 
-.rooms-wrap {
+.rooms {
   display: flex;
-  gap: 28px;
+  // gap: 58px;
+  img {
+    border-radius: 18px;
+  }
+  &-image {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    flex: 1;
+    &__list {
+      flex: 1;
+    }
+    &__thumbs {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
-
-.rooms-wrap img {
-  border-radius: 5px;
-}
-
-.rooms-image {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 1;
-}
-
-.rooms-image__thumbs {
-  display: flex;
-  gap: 10px;
-}
-
-.rooms-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
+/*end Rooms*/
