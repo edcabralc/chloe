@@ -44,26 +44,33 @@
   background-color: white;
   // justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  // padding: 10px 10px;
   border-radius: 5px;
 }
 
 .input {
   width: 100%;
+  padding: 6px 0;
 }
 
-.input input,
-.input-group input:focus {
-  padding: 10px 8px;
+.input input {
+  padding: 6px;
   width: 100%;
   background-color: transparent;
   border: red;
   color: $soft-gray;
+  &:focus {
+    // border: transparent;
+    outline: 1px solid $deep-gold;
+    padding: 6px;
+  }
 }
 
 .button {
   background-color: $deep-gold;
-  padding: 0px 30px;
+  padding: 8px 30px;
+  border-radius: 0 5px 5px 0;
+
   &:hover {
     opacity: 0.8;
   }

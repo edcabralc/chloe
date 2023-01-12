@@ -17,6 +17,7 @@
 
 .wrap-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 58px;
 }
 
@@ -54,7 +55,7 @@
 }
 
 .m-y {
-  margin: 50px 0;
+  margin: 42px 0;
 }
 
 .divider {
