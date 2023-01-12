@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 .hero {
-  background: url("/public/assets/images/hero-cover.png");
+  background: url("../images/hero-cover.png");
   background-size: cover;
   h1 {
     @include type-01;
@@ -16,7 +16,7 @@
     height: 350px;
     display: block;
     position: absolute;
-    background-image: url("/public/assets/images/ellipse-gold.svg");
+    background-image: url("../images/ellipse-gold.svg");
     background-repeat: no-repeat;
     background-size: contain;
     top: 0;

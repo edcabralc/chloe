@@ -1,3 +1,3 @@
 ## Preview
 
-Live demo []
+[Live demo](https://edcabralc.github.io/chloe/)
