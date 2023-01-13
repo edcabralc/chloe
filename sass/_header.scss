@@ -6,13 +6,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 1309px;
+  max-width: 130.9rem;
   width: 100%;
-  padding: 38px 32px;
+  padding: 3.8rem 3.2rem;
   margin: 0 auto;
   @include responsive(tablet) {
     justify-content: center;
-    gap: 32px;
+    gap: 3.2rem;
     flex-direction: column;
   }
   @include responsive(mobile) {
@@ -21,34 +21,34 @@
       width: 100%;
       justify-content: center;
       flex-direction: column;
-      padding: 32px;
+      padding: 3.2rem;
     }
   }
   .brand {
-    width: 219px;
+    width: 21.9rem;
   }
   .navbar {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 2.8rem;
     @include responsive(mobile) {
-      gap: 16px;
-      padding: 16px;
+      gap: 1.6rem;
+      padding: 1.6rem;
     }
     a:not(.btn-secondary) {
       font-family: $secondary-text;
       color: $black;
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 400;
-      padding: 16px 0;
+      padding: 1.6rem 0;
       display: inline-block;
       &:hover {
         color: $deep-green;
       }
     }
     .btn-secondary {
-      padding: 20px 0px;
-      width: 202px;
+      padding: 2rem 0rem;
+      width: 20.2rem;
     }
   }
 }

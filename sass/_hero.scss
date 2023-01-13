@@ -8,20 +8,20 @@
   h1 {
     @include type-01;
     max-width: 50ch;
-    font-size: 96px;
-    line-height: 90px;
+    font-size: 9.6rem;
+    line-height: 9rem;
     @include responsive(tablet) {
       text-align: center;
     }
     @include responsive(mobile) {
-      font-size: 54px;
-      line-height: 52px;
+      font-size: 5.4rem;
+      line-height: 5.2rem;
     }
   }
   &:after {
     content: "";
-    width: 280px;
-    height: 350px;
+    width: 28rem;
+    height: 35rem;
     display: block;
     position: absolute;
     background-image: url("../images/ellipse-gold.svg");
@@ -35,9 +35,9 @@
     align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
     justify-content: center;
-    margin-bottom: 68px;
+    margin-bottom: 6.8rem;
     @include responsive(tablet) {
       align-items: center;
     }

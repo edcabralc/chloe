@@ -14,10 +14,10 @@
     flex-direction: column;
     text-align: center;
     background-color: $light-gold;
-    padding: 0 32px;
+    padding: 0 3.2rem;
     height: 65vh;
     @include responsive(tablet) {
-      padding: 32px;
+      padding: 3.2rem;
     }
     .title {
       max-width: 14ch;

@@ -3,10 +3,10 @@
 /*Base*/
 .section {
   @include display-flex;
-  padding: 68px 0px;
-  margin: 0 32px;
+  padding: 6.8rem 0px;
+  margin: 0 3.2rem;
   @include responsive(mobile) {
-    padding: 34px 0;
+    padding: 3.4rem 0;
   }
 }
 
@@ -15,13 +15,13 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1090px;
+  max-width: 109rem;
 }
 
 .wrap-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 58px;
+  gap: 5.8rem;
   @include responsive(mobile) {
     flex-direction: column;
   }
@@ -52,17 +52,17 @@
 .title {
   @include type-01;
   @include responsive(mobile) {
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 4.2rem;
+    line-height: 4.6rem;
   }
 }
 
 .subtitle {
   @include type-02;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
   @include responsive(mobile) {
-    font-size: 32px;
-    line-height: 28px;
+    font-size: 3.2rem;
+    line-height: 2.8rem;
   }
 }
 
@@ -70,24 +70,24 @@
   @include type-03;
   max-width: 40ch;
   @include responsive(mobile) {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
     text-align: center;
   }
 }
 
 .m-y {
-  margin: 42px 0;
+  margin: 4.2rem 0;
   @include responsive(mobile) {
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 }
 
 .divider {
   background-color: $soft-gold;
-  padding: 80px;
+  padding: 8rem;
   @include responsive(tablet) {
-    padding: 32px;
+    padding: 3.2rem;
   }
   text-align: center;
   h2 {

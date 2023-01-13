@@ -3,19 +3,19 @@
 .rooms {
   display: flex;
   img {
-    border-radius: 18px;
+    border-radius: 1.8rem;
   }
   &-image {
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    gap: 3.8rem;
     flex: 1;
     &__list {
       flex: 1;
     }
     &__thumbs {
       display: flex;
-      gap: 10px;
+      gap: 1rem;
     }
   }
   &-content {
