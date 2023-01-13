@@ -52,7 +52,8 @@
 .title {
   @include type-01;
   @include responsive(mobile) {
-    font-size: 52px;
+    font-size: 42px;
+    line-height: 46px;
   }
 }
 
@@ -60,8 +61,8 @@
   @include type-02;
   margin-bottom: 8px;
   @include responsive(mobile) {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 28px;
   }
 }
 
