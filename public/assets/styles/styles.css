@@ -331,6 +331,12 @@ img {
 .location__content {
   flex: 1;
 }
+@media (max-width: 750px) {
+  .location__content {
+    align-items: center;
+    text-align: center;
+  }
+}
 .location__image {
   flex: 1;
 }

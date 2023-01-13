@@ -4,6 +4,10 @@
 .location {
   &__content {
     flex: 1;
+    @include responsive(mobile) {
+      align-items: center;
+      text-align: center;
+    }
   }
   &__image {
     flex: 1;
