@@ -361,6 +361,7 @@ html {
 .services-content__icons p {
   font-family: "Inter", sans-serif;
   color: #5d6f6b;
+  font-size: 1.6rem;
 }
 
 .location__content {
