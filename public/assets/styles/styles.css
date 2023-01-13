@@ -297,12 +297,25 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 750px) {
+  .services-content {
+    margin-top: 32px;
+    align-items: center;
+    text-align: center;
+  }
+}
 .services-content__icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   gap: 22px 0px;
+}
+@media (max-width: 750px) {
+  .services-content__icons {
+    margin-top: 32px;
+    width: 100%;
+  }
 }
 .services-content__icons li {
   display: flex;
