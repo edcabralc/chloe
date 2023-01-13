@@ -137,9 +137,9 @@ img {
 }
 .navbar a:not(.btn-secondary) {
   font-family: "Inter", sans-serif;
-  color: #5d6f6b;
+  color: #1d1b1b;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .navbar a:not(.btn-secondary):hover {
   color: #c2b791;
