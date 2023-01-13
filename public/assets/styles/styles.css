@@ -211,7 +211,7 @@ img {
   display: inline-block;
 }
 .header .navbar a:not(.btn-secondary):hover {
-  color: #c2b791;
+  color: #00352d;
 }
 .header .navbar .btn-secondary {
   padding: 20px 0px;
