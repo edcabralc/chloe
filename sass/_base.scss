@@ -1,6 +1,6 @@
 @use "variables" as *;
 @use "mixin" as *;
-
+/*Base*/
 .section {
   @include display-flex;
   padding: 68px 0px;
@@ -22,6 +22,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 58px;
+  @include responsive(mobile) {
+    flex-direction: column;
+  }
 }
 
 .reverse {
@@ -45,11 +48,18 @@
 
 .title {
   @include type-01;
+  @include responsive(mobile) {
+    font-size: 60px;
+  }
 }
 
 .subtitle {
   @include type-02;
   margin-bottom: 8px;
+  @include responsive(mobile) {
+    font-size: 38px;
+    line-height: 42px;
+  }
 }
 
 .paragraph {
@@ -73,3 +83,4 @@
     margin: 0 auto;
   }
 }
+/*end Base*/

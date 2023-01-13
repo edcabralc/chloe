@@ -17,6 +17,7 @@ img {
   max-width: 100%;
 }
 
+/*Base*/
 .section {
   display: flex;
   justify-content: center;
@@ -42,6 +43,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 58px;
+}
+@media (max-width: 750px) {
+  .wrap-content {
+    flex-direction: column;
+  }
 }
 
 .reverse {
@@ -88,6 +94,11 @@ img {
   font-weight: 700;
   line-height: 64px;
 }
+@media (max-width: 750px) {
+  .title {
+    font-size: 60px;
+  }
+}
 
 .subtitle {
   font-family: "Inter", sans-serif;
@@ -96,6 +107,12 @@ img {
   font-size: 48px;
   line-height: 58px;
   margin-bottom: 8px;
+}
+@media (max-width: 750px) {
+  .subtitle {
+    font-size: 38px;
+    line-height: 42px;
+  }
 }
 
 .paragraph {
@@ -126,6 +143,8 @@ img {
   margin: 0 auto;
 }
 
+/*end Base*/
+/*Header*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -152,30 +171,30 @@ img {
     padding: 32px;
   }
 }
-
-.brand {
+.header .brand {
   width: 219px;
 }
-
-.navbar {
+.header .navbar {
   display: flex;
   align-items: center;
   gap: 28px;
 }
-.navbar a:not(.btn-secondary) {
+.header .navbar a:not(.btn-secondary) {
   font-family: "Inter", sans-serif;
   color: #1d1b1b;
   font-size: 24px;
   font-weight: 400;
 }
-.navbar a:not(.btn-secondary):hover {
+.header .navbar a:not(.btn-secondary):hover {
   color: #c2b791;
 }
-.navbar .btn-secondary {
+.header .navbar .btn-secondary {
   padding: 20px 0px;
   width: 202px;
 }
 
+/*end Header*/
+/*Hero*/
 .hero {
   background: url("../images/hero-cover.png");
   background-size: cover;
@@ -214,8 +233,7 @@ img {
   top: 0;
   left: 0;
 }
-
-.hero-content {
+.hero .hero-content {
   width: 100%;
   align-self: center;
   display: flex;
@@ -225,11 +243,12 @@ img {
   margin-bottom: 68px;
 }
 @media (max-width: 960px) {
-  .hero-content {
+  .hero .hero-content {
     align-items: center;
   }
 }
 
+/*end Hero*/
 /*Rooms*/
 .rooms {
   display: flex;
@@ -254,6 +273,12 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+@media (max-width: 750px) {
+  .rooms-content {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /*end Rooms*/

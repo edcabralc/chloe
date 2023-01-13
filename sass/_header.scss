@@ -1,6 +1,6 @@
 @use "variables" as *;
 @use "mixin" as *;
-
+/*Header*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -24,27 +24,26 @@
       padding: 32px;
     }
   }
-}
-
-.brand {
-  width: 219px;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  a:not(.btn-secondary) {
-    font-family: $secondary-text;
-    color: $black;
-    font-size: 24px;
-    font-weight: 400;
-    &:hover {
-      color: $deep-gold;
+  .brand {
+    width: 219px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    a:not(.btn-secondary) {
+      font-family: $secondary-text;
+      color: $black;
+      font-size: 24px;
+      font-weight: 400;
+      &:hover {
+        color: $deep-gold;
+      }
+    }
+    .btn-secondary {
+      padding: 20px 0px;
+      width: 202px;
     }
   }
-  .btn-secondary {
-    padding: 20px 0px;
-    width: 202px;
-  }
 }
+/*end Header*/

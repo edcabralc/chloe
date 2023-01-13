@@ -1,6 +1,6 @@
 @use "mixin" as *;
 @use "variables" as *;
-
+/*Hero*/
 .hero {
   background: url("../images/hero-cover.png");
   background-size: cover;
@@ -30,17 +30,17 @@
     top: 0;
     left: 0;
   }
-}
-
-.hero-content {
-  width: 100%;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 68px;
-  @include responsive(tablet) {
-    align-items: center;
+  .hero-content {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 68px;
+    @include responsive(tablet) {
+      align-items: center;
+    }
   }
 }
+/*end Hero*/
