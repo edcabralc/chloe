@@ -3,6 +3,9 @@
 
 .contact {
   display: flex;
+  @include responsive(tablet) {
+    flex-direction: column;
+  }
   &-content {
     flex: 1;
     display: flex;
@@ -10,10 +13,12 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-
     background-color: $light-gold;
     padding: 0 32px;
     height: 65vh;
+    @include responsive(tablet) {
+      padding: 32px;
+    }
     .title {
       max-width: 14ch;
     }

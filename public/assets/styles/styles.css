@@ -150,6 +150,11 @@ img {
   padding: 80px;
   text-align: center;
 }
+@media (max-width: 960px) {
+  .divider {
+    padding: 32px;
+  }
+}
 .divider h2 {
   max-width: 25ch;
   margin: 0 auto;
@@ -380,6 +385,11 @@ img {
 .contact {
   display: flex;
 }
+@media (max-width: 960px) {
+  .contact {
+    flex-direction: column;
+  }
+}
 .contact-content {
   flex: 1;
   display: flex;
@@ -390,6 +400,11 @@ img {
   background-color: #ebe7da;
   padding: 0 32px;
   height: 65vh;
+}
+@media (max-width: 960px) {
+  .contact-content {
+    padding: 32px;
+  }
 }
 .contact-content .title {
   max-width: 14ch;

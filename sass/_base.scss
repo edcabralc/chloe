@@ -85,6 +85,9 @@
 .divider {
   background-color: $soft-gold;
   padding: 80px;
+  @include responsive(tablet) {
+    padding: 32px;
+  }
   text-align: center;
   h2 {
     max-width: 25ch;
