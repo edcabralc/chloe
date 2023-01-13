@@ -196,11 +196,19 @@ img {
   align-items: center;
   gap: 28px;
 }
+@media (max-width: 750px) {
+  .header .navbar {
+    gap: 16px;
+    padding: 16px;
+  }
+}
 .header .navbar a:not(.btn-secondary) {
   font-family: "Inter", sans-serif;
   color: #1d1b1b;
   font-size: 24px;
   font-weight: 400;
+  padding: 16px 0;
+  display: inline-block;
 }
 .header .navbar a:not(.btn-secondary):hover {
   color: #c2b791;
@@ -485,22 +493,32 @@ img {
   align-items: center;
   background-color: #00352d;
 }
-
 .footer-container {
-  max-width: 1300px;
-  width: 100%;
-  padding: 116px 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1309px;
+  width: 100%;
+  padding: 116px 32px;
 }
-
+@media (max-width: 960px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 78px 32px;
+  }
+}
+@media (max-width: 750px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
 .footer-logo img {
   width: 219px;
+  margin-bottom: 18px;
 }
-
-.footer p,
-.copy p {
+.footer p, .footer-copy p {
   font-family: "Inter", sans-serif;
   color: #5d6f6b;
   font-weight: 400;
@@ -509,8 +527,8 @@ img {
   color: white;
   font-weight: 300;
   font-size: 16px;
+  line-height: 26px;
 }
-
 .footer-item {
   font-family: "Inter", sans-serif;
   color: #5d6f6b;
@@ -526,75 +544,71 @@ img {
   font-size: 20px;
   font-weight: 700;
 }
-
 .footer-item p {
   max-width: 30ch;
   line-height: 22px;
   margin-bottom: 20px;
 }
-
 .footer-logo {
   flex: 1;
 }
-
 .footer-links {
   display: flex;
   flex: 2;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 750px) {
+  .footer-links {
+    gap: 32px;
+  }
+}
+@media (max-width: 750px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
 
 .input-group {
   display: flex;
-  background-color: white;
   align-items: center;
-  border-radius: 5px;
 }
-
-.input {
+.input-group .input {
   width: 100%;
-  padding: 6px 0;
-}
-
-.input input {
-  padding: 6px;
+  padding: 16px 12px;
   width: 100%;
-  background-color: transparent;
-  border: red;
+  background-color: #fff;
   color: #5d6f6b;
+  border: transparent;
 }
-.input input:focus {
-  outline: 1px solid #c2b791;
-  padding: 6px;
+.input-group .input:focus {
+  outline: 2px solid #c2b791;
 }
-
-.button {
+.input-group .button {
   background-color: #c2b791;
-  padding: 8px 30px;
-  border-radius: 0 5px 5px 0;
-}
-.button:hover {
-  opacity: 0.8;
-}
-
-.button button {
-  background-color: transparent;
+  width: 170px;
+  padding: 16px 12px;
   border: none;
-  width: 100%;
+  color: #ebe7da;
   cursor: pointer;
+  transition: ease 0.3s;
+}
+.input-group .button:hover {
+  opacity: 0.9;
+  color: #e5e8e0;
 }
 
-.copy {
+.footer-copy {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #01957d;
 }
-.copy a {
+.footer-copy a {
   color: #c2b791;
   font-weight: 700;
 }
-.copy a:hover {
+.footer-copy a:hover {
   color: #fff;
 }
 
@@ -606,10 +620,22 @@ img {
   max-width: 1300px;
   width: 100%;
 }
-
-.social {
+@media (max-width: 750px) {
+  .copy-container {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+}
+.copy-container .social {
   display: flex;
   gap: 15px;
+}
+.copy-container .social svg {
+  fill: #fff;
+}
+.copy-container .social svg:hover {
+  fill: #00352d;
 }
 
 /*# sourceMappingURL=styles.css.map */

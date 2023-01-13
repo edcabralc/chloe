@@ -31,11 +31,17 @@
     display: flex;
     align-items: center;
     gap: 28px;
+    @include responsive(mobile) {
+      gap: 16px;
+      padding: 16px;
+    }
     a:not(.btn-secondary) {
       font-family: $secondary-text;
       color: $black;
       font-size: 24px;
       font-weight: 400;
+      padding: 16px 0;
+      display: inline-block;
       &:hover {
         color: $deep-gold;
       }
