@@ -12,6 +12,10 @@ Projeto individual desenvolvido para o curso Full Stack - Javascript Developer d
 
 Depois de ter seguido as aulas, me desafiei a utilizar o Sass para processar o css do projeto, foi muito enriquecedor.
 
+## Como usar 🛠️
+
+Basta clonar o repositorio e instalar o sass: `npm i -g sass`
+
 ## Preview 📺
 
 [Clique aqui para ver o projeto](https://edcabralc.github.io/chloe/)
