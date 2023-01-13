@@ -29,6 +29,9 @@
 
 .reverse {
   flex-direction: row-reverse;
+  @include responsive(mobile) {
+    flex-direction: column;
+  }
 }
 
 .btn {
@@ -49,7 +52,7 @@
 .title {
   @include type-01;
   @include responsive(mobile) {
-    font-size: 60px;
+    font-size: 52px;
   }
 }
 
@@ -57,7 +60,7 @@
   @include type-02;
   margin-bottom: 8px;
   @include responsive(mobile) {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 42px;
   }
 }
@@ -65,6 +68,11 @@
 .paragraph {
   @include type-03;
   max-width: 40ch;
+  @include responsive(mobile) {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .m-y {

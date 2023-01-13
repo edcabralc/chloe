@@ -6,6 +6,10 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    @include responsive(mobile) {
+      align-items: center;
+      text-align: center;
+    }
   }
   &__image {
     flex: 1;

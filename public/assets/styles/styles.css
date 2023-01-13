@@ -53,6 +53,11 @@ img {
 .reverse {
   flex-direction: row-reverse;
 }
+@media (max-width: 750px) {
+  .reverse {
+    flex-direction: column;
+  }
+}
 
 .btn {
   font-family: "Inter", sans-serif;
@@ -96,7 +101,7 @@ img {
 }
 @media (max-width: 750px) {
   .title {
-    font-size: 60px;
+    font-size: 52px;
   }
 }
 
@@ -110,7 +115,7 @@ img {
 }
 @media (max-width: 750px) {
   .subtitle {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 42px;
   }
 }
@@ -122,6 +127,13 @@ img {
   font-size: 24px;
   line-height: 37px;
   max-width: 40ch;
+}
+@media (max-width: 750px) {
+  .paragraph {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .m-y {
@@ -286,10 +298,15 @@ img {
 .services .wrap-content {
   gap: 0;
 }
+@media (max-width: 960px) {
+  .services .wrap-content {
+    justify-content: center;
+    gap: 32px;
+  }
+}
 .services .wrap-content img {
-  flex: 1;
+  flex: 0 1 300px;
   object-fit: cover;
-  align-self: center;
 }
 .services-content {
   flex: 1;
@@ -345,6 +362,12 @@ img {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 750px) {
+  .events__content {
+    align-items: center;
+    text-align: center;
+  }
 }
 .events__image {
   flex: 1;

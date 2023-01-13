@@ -4,10 +4,13 @@
 .services {
   .wrap-content {
     gap: 0;
+    @include responsive(tablet) {
+      justify-content: center;
+      gap: 32px;
+    }
     & img {
-      flex: 1;
+      flex: 0 1 300px;
       object-fit: cover;
-      align-self: center;
     }
   }
   &-content {
