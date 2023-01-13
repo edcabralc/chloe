@@ -24,6 +24,11 @@ img {
   padding: 68px 0px;
   margin: 0 32px;
 }
+@media (max-width: 750px) {
+  .section {
+    padding: 34px 0;
+  }
+}
 
 .container {
   display: flex;
@@ -105,6 +110,11 @@ img {
 .m-y {
   margin: 42px 0;
 }
+@media (max-width: 750px) {
+  .m-y {
+    margin: 20px 0;
+  }
+}
 
 .divider {
   background-color: #e5e8e0;
@@ -118,12 +128,29 @@ img {
 
 .header {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 1309px;
   width: 100%;
-  justify-content: space-between;
   padding: 38px 32px;
   margin: 0 auto;
+}
+@media (max-width: 960px) {
+  .header {
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 750px) {
+  .header .navbar {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+  }
 }
 
 .brand {
@@ -152,6 +179,7 @@ img {
 .hero {
   background: url("../images/hero-cover.png");
   background-size: cover;
+  background-position: center;
 }
 .hero h1 {
   font-family: "Aleo", serif;
@@ -162,6 +190,17 @@ img {
   max-width: 50ch;
   font-size: 96px;
   line-height: 90px;
+}
+@media (max-width: 960px) {
+  .hero h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .hero h1 {
+    font-size: 60px;
+    line-height: 57px;
+  }
 }
 .hero:after {
   content: "";
@@ -184,6 +223,11 @@ img {
   gap: 20px;
   justify-content: center;
   margin-bottom: 68px;
+}
+@media (max-width: 960px) {
+  .hero-content {
+    align-items: center;
+  }
 }
 
 /*Rooms*/

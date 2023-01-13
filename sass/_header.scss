@@ -3,20 +3,31 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 1309px;
   width: 100%;
-  justify-content: space-between;
   padding: 38px 32px;
-  // position: relative;
   margin: 0 auto;
+  @include responsive(tablet) {
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+  }
+  @include responsive(mobile) {
+    .navbar {
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      padding: 32px;
+    }
+  }
 }
 
 .brand {
   width: 219px;
-}
-
-.menu {
 }
 
 .navbar {
@@ -36,7 +47,4 @@
     padding: 20px 0px;
     width: 202px;
   }
-}
-
-.menu-mobile {
 }

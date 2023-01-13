@@ -5,6 +5,9 @@
   @include display-flex;
   padding: 68px 0px;
   margin: 0 32px;
+  @include responsive(mobile) {
+    padding: 34px 0;
+  }
 }
 
 .container {
@@ -56,6 +59,9 @@
 
 .m-y {
   margin: 42px 0;
+  @include responsive(mobile) {
+    margin: 20px 0;
+  }
 }
 
 .divider {
